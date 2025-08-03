@@ -26,7 +26,9 @@ export default function Header() {
         <Link to="/researchs/add">
           <Button type="primary">เพิ่มสารนิพจน์</Button>
         </Link>
-        <Button type="primary">เข้าสู่ระบบ</Button>
+        <Link to="/auth/login">
+          <Button type="primary">เข้าสู่ระบบ</Button>
+        </Link>
         <Button icon={<SunOutlined />} />
         <Button icon={<GlobalOutlined />} />
       </div>

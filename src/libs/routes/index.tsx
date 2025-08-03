@@ -3,6 +3,7 @@ import Home from "../../views";
 import ResearchAdd from "../../views/research-add";
 import UI from "../../views/ui";
 import MainLayout from "../../layouts/MainLayout";
+import AuthLogin from "../../views/auth-login";
 
 export default function AppRoutes() {
   return (
@@ -15,6 +16,9 @@ export default function AppRoutes() {
           </Route>
         </Route>
 
+        <Route path="auth" >
+          <Route path="login" element={<AuthLogin />} />
+        </Route>
         <Route path="ui" element={<UI />} />
       </Routes>
     </BrowserRouter>

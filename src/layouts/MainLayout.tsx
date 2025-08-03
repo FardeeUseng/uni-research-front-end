@@ -9,7 +9,7 @@ export default function MainLayout() {
   return (
     <Layout style={{ minHeight: "100vh" }}>
       <Header />
-      <Content>
+      <Content style={{ margin: "20px 50px",  }}>
         <Outlet />
       </Content>
       <Footer />

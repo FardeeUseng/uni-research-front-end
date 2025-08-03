@@ -1,9 +1,15 @@
-import { Layout } from 'antd';
+import { Layout } from "antd";
 
 export default function Footer() {
   return (
-    <Layout.Footer>
+    <Layout.Footer
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       footer
     </Layout.Footer>
-  )
+  );
 }
